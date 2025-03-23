@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <img src="files/Salman Ul farisy-modified.png" class="logo"> <!-- Logo positioned at the top -->
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span>Salman Ul Farisy</span></h1>
+                <p><span>Developer</span></p>
+            </div>
+        </div> 
+    </div>
+<!-- about-->
+    <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="files/WhatsApp_Image_2022-12-16_at_11.47.07_AM-removebg-preview.png">
+            </div>
+            <div class="about-col-2">
+                <h1>About</h1>
+            <br>
+                <p>Highly skilled HTML, CSS, Javascript, C# .NET Developer with
+                    <br>fresher in designing, developing, and maintaining scalable 
+                    <br>web applications using NET Framework, ASP.NET Core, and C#.
+                    <br>Proficient in building RESTful APIs, integrating databases using 
+                    <br>Entity Framework,and implementing modern software design 
+                    <br>patterns and implementing modern software design patterns
+                    <br>to ensure performance, scalability, and maintainability.</p>
+                <div class="tab-titles">
+                    <p class="tab-links skill active-link" onclick="openTab('skill')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skill">
+                    <ul>
+                        <li><span>Web Developer<br></span><br>Web App Developer</li><br>                    
+                        <li><span>UI/UX<br></span><br>Designing Web/App Interface</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                <li><span>ZingMyOrder</span><p style="color: #df33ff">OCT(2024) to Present</p>
+                        <br>Managed and operated an e-commerce platform, ensuring seamless customer onboarding.
+                       <br>Developed and executed business strategies, marketing campaigns, and customer engagement initiatives.
+                        <br> Ensured efficient customer support management, enhancing client satisfaction.
+                        <br></li><br>                    
+                <li><span>Omega HealthCare</span> <p style="color: #df33ff">NOV(2023) to FEB(2024)</p>
+                        <br>Focuses on providing financial, administrative, and clinical solutions to healthcare providers, payers, and other stakeholders, with a particular emphasis on revenue cycle management (RCM) and technology-driven processes. 
+                        <br></li><br>
+                <li><span>NXTWAVE</span><p style="color: #df33ff">DEC(2021) to AUG(2022)</p>
+                    <br>Identified and prospected potential clients in target markets.
+                    <br>Built and maintained strong client relationships, ensuring excellent customer service.
+                    <br>Conducted market research to analyze customer needs, industry trends, and competitor insights.
+                    <br>Developed and implemented sales strategies to achieve targets.
+                    <br></li><br>
+                <li><span>Byjus</span><p style="color: #df33ff">JAN(2021) to NOV(2021)</p>
+                    <br>Generated leads and identified potential customers through various channels.   Conducted product demonstrations, highlighting BYJU'S educational products'
+features and benefits.
+  <br>Assessed customer needs and recommended tailored solutions.
+ <br>Built and maintained long-term customer relationships to drive retention and satisfaction.
+
+                </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>Master in Computer Application &nbsp; </span>(2019-2021)</li>
+                <br>Dr.Mahalingam College of Enginerring and Technology<br>
+                <br><li><span>Bachelor of Computer Science &nbsp;  </span>(2016-2019)</li>
+                <br>Sree Saraswathi Thayagaraga College<br>
+                                    
+                <br><li><span>HSC(12th)  &nbsp;  </span>(2014-2016)</li>
+                <br>Sri Gopal Naidu Higher Secondary School<br>
+                                    
+                <br><li><span>SSLC(10th) &nbsp;  </span>(2012-2014)</li>
+                <br>Sri Gopal Naidu Higher Secondary School<br>
+            </ul>
+    </div>
+            </div>
+        </div>
+    </div>
+    <!------------------- service-->
+    <div id ="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("ative-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
